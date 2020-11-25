@@ -7,6 +7,7 @@ const overlay = document.getElementById('overlay');
 
 // Initializer
 let missed = 0;
+let lostHeart = '';
 
 // Array of Phrases
 const phrases = [
@@ -82,11 +83,11 @@ function addPhraseToDisplay(arr) {
   
     if ( letter.length === show.length ) {
       overlay.className = 'win';
-      document.querySelector('h2').innerHTML = 'Congrats You Win!';
+      document.querySelector('h2').innerHTML = 'You did it great job!';
       overlay.style.display = 'flex';
     } else if ( missed > 4 ) {
       overlay.className = 'lose';
-      document.querySelector('h2').innerHTML = "You lost! Try again";
+      document.querySelector('h2').innerHTML = "Sorry! Try again";
       overlay.style.display = 'flex';
     }
   };
