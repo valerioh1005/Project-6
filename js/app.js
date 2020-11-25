@@ -55,7 +55,7 @@ function addPhraseToDisplay(arr) {
     let match = null;
   
     for ( let i = 0; i < checkLetter.length; i++) {
-      if (checkLetter[i].textContent === button.textContent) {
+      if (checkLetter[i].textContent.toUpperCase() === button.textContent.toUpperCase()) {
         checkLetter[i].classList.add('show');
         match = true;
       }
