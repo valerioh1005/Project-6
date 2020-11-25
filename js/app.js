@@ -18,6 +18,13 @@ const phrases = [
 ];
 
 // This handler will hide overlay when you click 
-startGame.addEventListener('click', () => {
+overlay.addEventListener('click', () => {
     overlay.style.display = 'none';
 });
+
+// Randon phrase array function
+const getRandomPhraseArray = () => {
+    let randomNumber = Math.floor(Math.random() * (phrases.length) );
+};
+
+getRandomPhraseArray(phrases);
