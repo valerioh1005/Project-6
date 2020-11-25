@@ -19,5 +19,5 @@ const phrases = [
 
 // This handler will hide overlay when you click 
 startGame.addEventListener('click', () => {
-    overlay.style.display = none;
+    overlay.style.display = 'none';
 });
