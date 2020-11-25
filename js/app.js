@@ -4,7 +4,7 @@ const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
 const startGame = document.querySelector('.btn__reset');
 const overlay = document.getElementById('overlay');
-const lostHeart = document.querySelectorAll('tries')
+const lostHeart = document.querySelectorAll('.tries img')
 
 // Initializer
 let missed = 0;
@@ -30,6 +30,7 @@ const getRandomPhraseArray = (arr) => {
 };
 
 getRandomPhraseArray(phrases);
+
 
 
 function addPhraseToDisplay(arr) {
