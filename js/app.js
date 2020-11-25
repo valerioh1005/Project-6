@@ -2,24 +2,24 @@
 
 const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
-const startGame = document.getElementsByClassName('.btn_reset');
+const startGame = document.querySelector('.btn__reset');
 const overlay = document.getElementById('overlay');
+const lostHeart = document.querySelectorAll('tries')
 
 // Initializer
 let missed = 0;
-let lostHeart = '';
+
 
 // Array of Phrases
 const phrases = [
-    "Inner strength is not found it's created",
-    "Through self-discipline comes freedom",
-    "To bear trials with a calm mind robs misfortune of its strength and burden",
-    "Patience is bitter, but its fruit is sweet",
-    "Many a false step was made by standing still",
+    " Inner strength is not found its created",
+    " Through self discipline comes freedom",
+    " To bear trials with a calm mind robs misfortune of its strength and burden",
+    " Patience is bitter but its fruit is sweet",
 ];
 
 // This handler will hide overlay when you click 
-overlay.addEventListener('click', () => {
+startGame.addEventListener('click', () => {
     overlay.style.display = 'none';
 });
 
@@ -83,7 +83,7 @@ function addPhraseToDisplay(arr) {
   
     if ( letter.length === show.length ) {
       overlay.className = 'win';
-      document.querySelector('h2').innerHTML = 'You did it great job!';
+      document.querySelector('h2').innerHTML = 'You did it, great job!';
       overlay.style.display = 'flex';
     } else if ( missed > 4 ) {
       overlay.className = 'lose';

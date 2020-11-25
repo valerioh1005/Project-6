@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "Project-6",
+			"path": "."
+		},
+		{
+			"name": "css",
+			"path": "../../../Downloads/game_show_app_v1.2 (1)/css"
+		},
+		{
+			"name": "images",
+			"path": "../../../Downloads/game_show_app_v1.2 (1)/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project-6"
+	}
+}
