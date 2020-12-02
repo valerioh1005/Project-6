@@ -16,6 +16,7 @@ const phrases = [
     " Through self discipline comes freedom",
     " To bear trials with a calm mind robs misfortune of its strength and burden",
     " Patience is bitter but its fruit is sweet",
+    "When you have somthing to say slience is a lie"
 ];
 
 // This handler will hide overlay when you click 
